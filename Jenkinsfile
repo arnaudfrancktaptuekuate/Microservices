@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t 130219922021/recommendationservice:01 ."
+                        sh "docker build -t 130219922021/recommendationservice:0.1 ."
                     }
                 }
             }
