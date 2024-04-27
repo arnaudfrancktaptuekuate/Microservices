@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker push 130219922021/productcatalogservice:0.1 "
+                        sh "docker push 130219922021/productcatalogservice:0.1"
                     }
                 }
             }
