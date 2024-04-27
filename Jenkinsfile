@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t "image-name":latest ."
+                        sh "docker build -t 130219922021/load-generator_service:0.1 ."
                     }
                 }
             }
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker push "image-name":latest"
+                        sh "docker push 130219922021/load-generator_service:0.1"
                     }
                 }
             }
