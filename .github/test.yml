@@ -1,0 +1,22 @@
+name: first_job
+
+on: push
+
+jobs:
+  first_job:
+    runs-on: ubuntu
+    steps:
+    - name: welcome message
+      run: echo "welcome to github"
+
+    - name: git clone
+      run: echo "src code cloned from repo"
+
+    - name: code scanning
+      run: echo "trivy done sca"
+
+    - name: list the directory
+      run: ls
+
+    - name: read jenkins file
+      run: cat Jenkinsfile
